@@ -1,0 +1,9 @@
+ using UnityEngine;
+ public Transform SpawnPosition;
+ public GameObject spawn_capsule;
+ {
+ void SpawnObject() 
+{
+     Instantiate(spawn_capsule, SpawnPosition.position);
+ }
+ }

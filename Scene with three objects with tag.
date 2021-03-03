@@ -1,0 +1,35 @@
+using UnityEngine;
+public class Scene : MonoBehaviour
+{
+   // Create a plane, cube and capsule in the Scene.    
+   void Start()
+    {
+       //Plane
+        {
+        GameObject plane  = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        //Tagging
+        static string plane="ground"; 
+        gameObject.tag = plane;
+       }
+       
+       //Cube
+       {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.transform.position = new Vector3(0, 0.5f, 0);
+         //Tagging
+         static string cube="player";
+         gameObject.tag = cube;
+       }
+        
+        //Capsule
+       { 
+        GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        capsule.transform.position = new Vector3(2, 1, 0);     
+         //Tagging
+        static string capsule="capsule";
+        gameObject.tag = capsule;
+       } 
+       
+    }
+}
+© 2021 GitHub, Inc.

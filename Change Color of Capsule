@@ -1,0 +1,13 @@
+[RequireComponent(typeof(Renderer))]
+public class capsule : MonoBehaviour
+{
+    public List<Color> capsule;
+    
+    void Start()
+    {
+       //Using 4 different materials
+       GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); 
+    }
+
+
+}
